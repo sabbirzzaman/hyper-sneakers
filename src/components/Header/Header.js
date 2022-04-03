@@ -10,7 +10,7 @@ const Header = () => {
         return (
           <div>
             <Link
-              style={{ color: match ? "#fbd602" : "#FFF" }}
+              style={{ color: match ? "#fbd602" : "" }}
               to={to}
               {...props}
             >

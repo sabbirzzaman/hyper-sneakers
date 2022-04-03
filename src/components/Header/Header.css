@@ -4,10 +4,9 @@ nav {
 }
 
 nav .container {
-    height: 120px;
+    height: 80px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -30,6 +29,6 @@ nav h3 {
     transition: .3s ease-in-out;
 }
 
-.navigation a:hover {
+.navigation div a:hover {
     color: #fbd602;
 }
