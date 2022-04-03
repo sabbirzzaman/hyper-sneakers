@@ -1,0 +1,16 @@
+.not-founded {
+    height: calc(100vh - 120px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.not-founded h2 {
+    padding: 10px;
+}
+
+.not-founded span {
+    height: 8%;
+    width: 4px;
+    background-color: #fbd602;
+}

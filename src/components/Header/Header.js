@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useMatch, useResolvedPath } from 'react-router-dom';
+import { Link, useMatch, useNavigate, useResolvedPath } from 'react-router-dom';
 import './Header.css'
 
 const Header = () => {
@@ -20,10 +20,12 @@ const Header = () => {
         );
       }
 
+      const navigate = useNavigate()
+
     return (
         <nav>
             <div className="container">
-                <Link className='site-logo' to='/'>Hyper Sneakers</Link>
+                <h3 onClick={() => navigate('/')}>Hyper Sneakers</h3>
 
                 <div className='navigation'>
                     <CustomLink to='/home'>Home</CustomLink>
