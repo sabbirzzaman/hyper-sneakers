@@ -1,7 +1,7 @@
 .review-item {
     background-color: #000;
     display: flex;
-    padding: 15px;
+    padding: 20px;
     border-radius: 8px;
     align-items: flex-end;
     gap: 15px;
