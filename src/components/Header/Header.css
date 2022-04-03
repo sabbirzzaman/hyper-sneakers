@@ -11,9 +11,10 @@ nav .container {
     align-items: center;
 }
 
-nav h3 {
+.site-logo {
     color: #fbd602;
     font-size: 24px;
+    font-weight: 700;
     margin-bottom: 10px;
     text-transform: uppercase;
     cursor: pointer;

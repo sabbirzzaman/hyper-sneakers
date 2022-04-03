@@ -1,0 +1,10 @@
+.client-review {
+    padding: 80px 0;
+}
+
+.review-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 40px;
+}

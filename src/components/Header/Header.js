@@ -23,7 +23,7 @@ const Header = () => {
     return (
         <nav>
             <div className="container">
-                <h3>Hyper Sneakers</h3>
+                <Link className='site-logo' to='/'>Hyper Sneakers</Link>
 
                 <div className='navigation'>
                     <CustomLink to='/home'>Home</CustomLink>
