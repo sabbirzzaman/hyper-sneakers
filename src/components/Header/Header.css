@@ -1,6 +1,6 @@
 nav {
-    background-color: rgb(18, 18, 18);
-    color: white;
+    background-color: rgb(25 25 25);
+    border-bottom: 1px solid #fbd602;
 }
 
 nav .container {
@@ -12,6 +12,7 @@ nav .container {
 }
 
 nav h3 {
+    color: #fbd602;
     font-size: 24px;
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -24,12 +25,11 @@ nav h3 {
 }
 
 .navigation a {
-    color: #FFF;
     text-transform: uppercase;
     font-weight: 500;
     transition: .3s ease-in-out;
 }
 
 .navigation a:hover {
-    color: #EA2027;
+    color: #fbd602;
 }
