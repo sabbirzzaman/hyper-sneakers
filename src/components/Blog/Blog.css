@@ -2,6 +2,10 @@
     padding: 80px 0;
 }
 
+.blog-container .container {
+    max-width: 600px;
+}
+
 .blog-item {
     background-color: #000;
     padding: 20px;
@@ -9,6 +13,12 @@
     border-radius: 8px;
 }
 
-.blog-item h3 {
+.blog-item h3, .blog-item p {
     margin-bottom: 10px;
+}
+
+code {
+    background: #585858;
+    border-radius: 4px;
+    padding: 0px 2px;
 }
