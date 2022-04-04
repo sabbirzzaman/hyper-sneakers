@@ -10,7 +10,7 @@ const Review = () => {
         <div className="review-container">
             <div className="container">
                 <h2>
-                    Client Review<span>.</span>
+                    What our client says<span>.</span>
                 </h2>
 
                 <div className="review-section">

@@ -5,7 +5,6 @@ import {
     Bar,
     BarChart,
     CartesianGrid,
-    Legend,
     Line,
     LineChart,
     Pie,
@@ -105,7 +104,7 @@ const Dashboard = () => {
                 </div>
 
                 <div className="chart-item">
-                    <h3>Year wise sell</h3>
+                    <h3>Sells</h3>
                     <ResponsiveContainer width="100%" height={300}>
                         <PieChart
                             width={400}
