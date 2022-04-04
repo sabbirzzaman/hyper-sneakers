@@ -3,36 +3,36 @@
         "year": "2017",
         "investment": 1760000,
         "sell": 2541,
-        "revenue": 100401
+        "revenue": 1760401
     },
     {
         "year": "2018",
         "investment": 2230000,
         "sell": 4223,
-        "revenue": 240500
+        "revenue": 2400500
     },
     {
         "year": "2019",
         "investment": 5340000,
         "sell": 4726,
-        "revenue": 670010
+        "revenue": 6070010
     },
     {
         "year": "2020",
         "investment": 5500000,
         "sell": 5729,
-        "revenue": 404005
+        "revenue": 5704005
     },
     {
         "year": "2021",
         "investment": 6200000,
         "sell": 6401,
-        "revenue": 509000
+        "revenue": 6690000
     },
     {
         "year": "2022",
         "investment": 7100000,
         "sell": 6970,
-        "revenue": 610000
+        "revenue": 7810000
     }
 ]

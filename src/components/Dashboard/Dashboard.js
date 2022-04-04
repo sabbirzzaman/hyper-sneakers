@@ -57,7 +57,7 @@ const Dashboard = () => {
                 </div>
 
                 <div className="chart-item">
-                    <h3>Year Wise Investment</h3>
+                    <h3>Year Wise Revenue</h3>
                     <AreaChart
                         width={500}
                         height={300}
@@ -75,7 +75,7 @@ const Dashboard = () => {
                         <Tooltip />
                         <Area
                             type="monotone"
-                            dataKey="investment"
+                            dataKey="revenue"
                             stroke="#fbd602"
                             fill="#fbd602"
                         />
@@ -83,7 +83,7 @@ const Dashboard = () => {
                 </div>
 
                 <div className="chart-item">
-                    <h3>Investment</h3>
+                    <h3>Investment Vs Revenue</h3>
                     <BarChart
                         width={500}
                         height={300}
@@ -96,15 +96,17 @@ const Dashboard = () => {
                         }}
                     >
                         <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis dataKey="year" />
+                        <XAxis dataKey="name" />
                         <YAxis />
                         <Tooltip />
+
                         <Bar dataKey="investment" fill="#fbd602" />
+                        <Bar dataKey="revenue" stackId="a" fill="#82ca9d" />
                     </BarChart>
                 </div>
 
                 <div className="chart-item">
-                    <h3>Sells</h3>
+                    <h3>Investment Vs Revenue</h3>
                     <ResponsiveContainer width="100%" height={300}>
                         <PieChart
                             width={400}
@@ -116,7 +118,20 @@ const Dashboard = () => {
                                 bottom: 5,
                             }}
                         >
-                            <Pie data={chart} dataKey="sell" fill="#fbd602" />
+                            <Pie
+                                data={chart}
+                                dataKey="revenue"
+                                outerRadius={80}
+                                fill="#8884d8"
+                            />
+                            <Pie
+                                data={chart}
+                                dataKey="investment"
+                                innerRadius={90}
+                                outerRadius={120}
+                                fill="#82ca9d"
+                                label
+                            />
                             <Tooltip />
                         </PieChart>
                     </ResponsiveContainer>
