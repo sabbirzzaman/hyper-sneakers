@@ -121,14 +121,14 @@ const Dashboard = () => {
                             <Pie
                                 data={chart}
                                 dataKey="revenue"
-                                outerRadius={80}
+                                outerRadius={70}
                                 fill="#8884d8"
                             />
                             <Pie
                                 data={chart}
                                 dataKey="investment"
-                                innerRadius={90}
-                                outerRadius={120}
+                                innerRadius={80}
+                                outerRadius={110}
                                 fill="#82ca9d"
                                 label
                             />
