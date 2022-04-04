@@ -1,3 +1,14 @@
 .dashboard-container {
     padding: 80px 0;
 }
+
+.dashboard-container .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.chart-item h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
