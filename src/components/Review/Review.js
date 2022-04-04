@@ -6,8 +6,6 @@ import './Review.css';
 const Review = () => {
     const [reviews] = useReview();
 
-    console.log(reviews)
-
     return (
         <div className="review-container">
             <div className="container">
