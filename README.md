@@ -1,4 +1,4 @@
-# GHyper Sneakers
+# Hyper Sneakers
 
 ## [Live Link](https://hyper-sneakers.netlify.app/)
 
