@@ -63,6 +63,10 @@ nav h3 {
         transition: .3s ease-in-out;
     }
 
+    nav h3 {
+        margin-bottom: 0;
+    }
+
     .hide {
         transform: translateX(-100%);
     }
@@ -89,6 +93,10 @@ nav h3 {
         gap: 10px;
         transform: translateX(0%);
         transition: .3s ease-in-out;
+    }
+
+    nav h3 {
+        margin-bottom: 0;
     }
 
     .hide {
