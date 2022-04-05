@@ -24,3 +24,45 @@
     margin-bottom: 15px;
 }
 
+/* Medium devices (landscape tablets, 689px and up) */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    .hero-section {
+        height: calc(70vh - 80px);
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+    
+    .hero-content p {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+/* Extra small devices (phones, 688px and down) */
+@media only screen and (max-width: 688px) {
+    .hero-section {
+        height: calc(70vh - 80px);
+        background-position: left;
+        text-align: center;
+    }
+
+    .hero-section .container {
+        display: flex;
+    }
+
+    .hero-content h1 {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+    .hero-content {
+        padding: 0 30px;
+    }
+    
+    .hero-content p {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+}

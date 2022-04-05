@@ -21,6 +21,7 @@ nav h3 {
 .navigation {
     display: flex;
     gap: 30px;
+    z-index: 10;
 }
 
 .navigation a {
@@ -31,4 +32,66 @@ nav h3 {
 
 .navigation div a:hover {
     color: #fbd602;
+}
+
+.hamburger {
+    display: none;
+    color: #FFF;
+    cursor: pointer;
+}
+
+/* Medium devices (landscape tablets, 689px and up) */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    .hamburger {
+        display: block;
+    }
+
+    .navigation {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 70%;
+        background-color: #000;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px;
+        font-size: 24px;
+        gap: 10px;
+        transform: translateX(0%);
+        transition: .3s ease-in-out;
+    }
+
+    .hide {
+        transform: translateX(-100%);
+    }
+}
+
+/* Extra small devices (phones, 688px and down) */
+@media only screen and (max-width: 688px) {
+    .hamburger {
+        display: block;
+    }
+
+    .navigation {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 70%;
+        background-color: #000;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px;
+        font-size: 24px;
+        gap: 10px;
+        transform: translateX(0%);
+        transition: .3s ease-in-out;
+    }
+
+    .hide {
+        transform: translateX(-100%);
+    }
 }

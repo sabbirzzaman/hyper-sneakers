@@ -32,77 +32,83 @@ const Dashboard = () => {
             <div className="container">
                 <div className="chart-item">
                     <h3>Year Wise Sell</h3>
-                    <LineChart
-                        width={500}
-                        height={300}
-                        data={chart}
-                        margin={{
-                            top: 5,
-                            right: 30,
-                            left: 20,
-                            bottom: 5,
-                        }}
-                    >
-                        <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis dataKey="year" />
-                        <YAxis />
-                        <Tooltip />
-                        <Line
-                            type="monotone"
-                            dataKey="sell"
-                            stroke="#fbd602"
-                            activeDot={{ r: 8 }}
-                        />
-                    </LineChart>
+                    <ResponsiveContainer width="100%" height={300}>
+                        <LineChart
+                            width={500}
+                            height={300}
+                            data={chart}
+                            margin={{
+                                top: 5,
+                                right: 30,
+                                left: 20,
+                                bottom: 5,
+                            }}
+                        >
+                            <CartesianGrid strokeDasharray="3 3" />
+                            <XAxis dataKey="year" />
+                            <YAxis />
+                            <Tooltip />
+                            <Line
+                                type="monotone"
+                                dataKey="sell"
+                                stroke="#fbd602"
+                                activeDot={{ r: 8 }}
+                            />
+                        </LineChart>
+                    </ResponsiveContainer>
                 </div>
 
                 <div className="chart-item">
                     <h3>Year Wise Revenue</h3>
-                    <AreaChart
-                        width={500}
-                        height={300}
-                        data={chart}
-                        margin={{
-                            top: 5,
-                            right: 30,
-                            left: 20,
-                            bottom: 5,
-                        }}
-                    >
-                        <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis dataKey="sell" />
-                        <YAxis />
-                        <Tooltip />
-                        <Area
-                            type="monotone"
-                            dataKey="revenue"
-                            stroke="#fbd602"
-                            fill="#fbd602"
-                        />
-                    </AreaChart>
+                    <ResponsiveContainer width="100%" height={300}>
+                        <AreaChart
+                            width={500}
+                            height={300}
+                            data={chart}
+                            margin={{
+                                top: 5,
+                                right: 30,
+                                left: 20,
+                                bottom: 5,
+                            }}
+                        >
+                            <CartesianGrid strokeDasharray="3 3" />
+                            <XAxis dataKey="sell" />
+                            <YAxis />
+                            <Tooltip />
+                            <Area
+                                type="monotone"
+                                dataKey="revenue"
+                                stroke="#fbd602"
+                                fill="#fbd602"
+                            />
+                        </AreaChart>
+                    </ResponsiveContainer>
                 </div>
 
                 <div className="chart-item">
                     <h3>Investment Vs Revenue</h3>
-                    <BarChart
-                        width={500}
-                        height={300}
-                        data={chart}
-                        margin={{
-                            top: 5,
-                            right: 30,
-                            left: 20,
-                            bottom: 5,
-                        }}
-                    >
-                        <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis dataKey="name" />
-                        <YAxis />
-                        <Tooltip />
+                    <ResponsiveContainer width="100%" height={300}>
+                        <BarChart
+                            width={500}
+                            height={300}
+                            data={chart}
+                            margin={{
+                                top: 5,
+                                right: 30,
+                                left: 20,
+                                bottom: 5,
+                            }}
+                        >
+                            <CartesianGrid strokeDasharray="3 3" />
+                            <XAxis dataKey="name" />
+                            <YAxis />
+                            <Tooltip />
 
-                        <Bar dataKey="investment" fill="#fbd602" />
-                        <Bar dataKey="revenue" stackId="a" fill="#82ca9d" />
-                    </BarChart>
+                            <Bar dataKey="investment" fill="#fbd602" />
+                            <Bar dataKey="revenue" stackId="a" fill="#82ca9d" />
+                        </BarChart>
+                    </ResponsiveContainer>
                 </div>
 
                 <div className="chart-item">
